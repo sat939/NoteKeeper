@@ -33,15 +33,15 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonFirst.setOnClickListener {
-
-            val originalValue = binding.textViewIdValue.text.toString().toInt()
-            val newValue = (originalValue * 2).toString()
-            binding.textViewIdValue.text = newValue
-//            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-            Snackbar.make(view, "$originalValue changed to $newValue", Snackbar.LENGTH_INDEFINITE)
-                .setAction("Action", null).show()
-        }
+//        binding.buttonFirst.setOnClickListener {
+//
+//            val originalValue = binding.textViewIdValue.text.toString().toInt()
+//            val newValue = (originalValue * 2).toString()
+//            binding.textViewIdValue.text = newValue
+////            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+//            Snackbar.make(view, "$originalValue changed to $newValue", Snackbar.LENGTH_INDEFINITE)
+//                .setAction("Action", null).show()
+//        }
     }
 
     override fun onDestroyView() {
